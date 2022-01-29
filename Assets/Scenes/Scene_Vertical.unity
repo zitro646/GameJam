@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 321929609}
   - component: {fileID: 321929610}
   m_Layer: 0
-  m_Name: Kamikaze Spawner
+  m_Name: kaze Spawnerwner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,6 +165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 232702689819045748, guid: bd9bcf976a95e438581ca1c70464f4e0, type: 3}
   rotation: 0
+  startingtime: 0
+  amount: 0
 --- !u!1 &697900662
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,6 +463,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 250
+  HP: 0
+  munition: 0
 --- !u!50 &1945930212
 Rigidbody2D:
   serializedVersion: 4

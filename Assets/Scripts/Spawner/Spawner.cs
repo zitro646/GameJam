@@ -13,6 +13,8 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         currentTime = startingtime;
+        Instantiate (enemy, transform.position , transform.rotation);
+        Debug.Log("works");
     }
  
     // Update is called once per frame

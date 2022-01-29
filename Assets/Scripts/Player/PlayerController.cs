@@ -8,10 +8,13 @@ public class PlayerController : MonoBehaviour
     float inputH = 0;
     float inputY = 0;
     public float speed;
+    public int HP;
+    public int munition;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        HP = 400;
     }
 
     void Update()
@@ -31,6 +34,10 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Algo paso\n");
         if(other.gameObject.tag == "Enemy_Kamikaze")
-            Destroy(other.gameObject);
+        {
+           Destroy(other.gameObject);
+           HP -= 40;
+           Debug.Log(HP);
+        }
     }
 }

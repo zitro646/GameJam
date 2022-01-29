@@ -5,12 +5,15 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     public GameObject Bullet;
+    public int munition;
+    int max_munition;
     GameObject bullet;
     List<GameObject> bullets = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
-        
+        max_munition = 20;
+        munition = 10;
     }
 
     // Update is called once per frame

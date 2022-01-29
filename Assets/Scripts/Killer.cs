@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Killer : MonoBehaviour
 {
-
     Transform transform;
     Vector3 orginalPos;
     Rigidbody2D rb;
@@ -28,14 +27,5 @@ public class Killer : MonoBehaviour
             //Destroy(gameObject);
         }
 
-    }
-
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        Debug.Log("lol");
-    }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("lol");
     }
 }
