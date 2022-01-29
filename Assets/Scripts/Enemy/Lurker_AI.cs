@@ -56,8 +56,8 @@ public class Lurker_AI : MonoBehaviour
         }
         if (fase == 2)
         {
-            target = target2;
-            target2 = aux;
+            target = target3;
+            target3 = aux;
             fase = -1;
         }
         fase++;
@@ -108,7 +108,7 @@ public class Lurker_AI : MonoBehaviour
     {
          if (other.gameObject.tag.Contains("Player_Bullet"))
         {
-            hp -= 80;
+            hp -= 40;
             if (hp <= 0)
                 Destroy(this.gameObject);
             Destroy(other.gameObject);

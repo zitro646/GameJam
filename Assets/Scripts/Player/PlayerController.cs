@@ -33,16 +33,24 @@ public class PlayerController : MonoBehaviour
     {
         if(other.gameObject.tag == "Enemy_Kamikaze")
         {
-           Debug.Log("Entra en contacto con el kamikaze");
            Destroy(other.gameObject);
            HP -= 80;
-           Debug.Log(HP);
         }
         else if(other.gameObject.tag == "Enemy_Bomber")
         {
            Destroy(other.gameObject);
            HP -= 40;
-           Debug.Log(HP);
+        }
+        else if(other.gameObject.tag == "Enemy_Lurker")
+        {
+           Destroy(other.gameObject);
+           HP -= 40;
+        }
+        else if(other.gameObject.tag == "Enemy_Bullet")
+        {
+            Debug.Log("Absorbe bala");
+           Destroy(other.gameObject);
+           HP -= 20;
         }
     }
 

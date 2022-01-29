@@ -8,9 +8,11 @@ public class Kamikaze_AI : MonoBehaviour
     private GameObject player;
     Rigidbody2D rb;
     private float   objectwidth;
+    public int hp;
 
     void Start()
     {
+        hp = 240;
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.Find("Ship");
     }
@@ -38,16 +40,16 @@ public class Kamikaze_AI : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Triggered  -> " + other.tag);
         if (other.gameObject.tag == "Player_Bullet")
         {
-            Debug.Log("Es golpeado por una bala");
+            hp -= 80;
+            Debug.Log("Vida despues del golpe : "+ hp);
+            if (hp <= 0)
+                Destroy(this.gameObject);
             Destroy(other.gameObject);
-            Destroy(this.gameObject);
         }
         else if(other.gameObject.tag == "Player")
         {
-            Debug.Log("Toca al jugador");
             Destroy(this.gameObject);
         }
     }
