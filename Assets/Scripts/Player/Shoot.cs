@@ -19,7 +19,9 @@ public class Shoot : MonoBehaviour
         if (Input.GetKeyDown("return"))
         {
             bullet = Instantiate(Bullet, transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+            
             bullets.Add(bullet);
+            Debug.Log(bullets);  
         }
     }
 }
