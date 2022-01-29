@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,7 +20,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         inputH = Input.GetAxis("Horizontal");
-        inputY = Input.GetAxis("Vertical");  
+        inputY = Input.GetAxis("Vertical");
+        if (HP <= 0)
+            SceneManager.LoadScene("You Lose");
     }
 
     void FixedUpdate()

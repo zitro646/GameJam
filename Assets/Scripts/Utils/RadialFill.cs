@@ -10,7 +10,6 @@ public class RadialFill : MonoBehaviour
     void Start()
     {
         Fill(0.8f);
-        
     }
     void Fill(float fill_amount)
     {

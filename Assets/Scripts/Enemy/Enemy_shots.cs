@@ -18,7 +18,6 @@ public class Enemy_shots : MonoBehaviour
         time -= Time.deltaTime;
         if (time <= 0.0f)
         {
-            Debug.Log("Pium  Pium!!");
             timerEnded();
             time = targetTime;
         }
