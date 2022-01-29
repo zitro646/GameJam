@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
     float inputH = 0;
-    float inputV = 0;
+    float inputY = 0;
     public float speed;
 
     void Start()
@@ -16,14 +16,21 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        inputH = Input.GetAxis("Horizontal"); 
-        inputV = Input.GetAxis("Vertical"); 
+        inputH = Input.GetAxis("Horizontal");
+        inputY = Input.GetAxis("Vertical");  
     }
 
     void FixedUpdate()
     {
         float velocityX = inputH * speed * Time.fixedDeltaTime;
-        float velocityY = inputV * speed * Time.fixedDeltaTime;
+        float velocityY = inputY * speed * Time.fixedDeltaTime;
         rb.velocity = new Vector2(velocityX, velocityY);
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("Algo paso\n");
+        if(other.gameObject.tag == "Enemy_Kamikaze")
+            Destroy(other.gameObject);
     }
 }
