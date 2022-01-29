@@ -21,3 +21,4 @@ public class CollisionTest : MonoBehaviour
         Debug.Log("Me he chocado con el suelo (ay!)");
     }
 }
+  

@@ -26,4 +26,11 @@ public class PlayerController : MonoBehaviour
         float velocityY = inputY * speed * Time.fixedDeltaTime;
         rb.velocity = new Vector2(velocityX, velocityY);
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("Algo paso\n");
+        if(other.gameObject.tag == "Enemy_Kamikaze")
+            Destroy(other.gameObject);
+    }
 }

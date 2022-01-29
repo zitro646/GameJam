@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 590282927}
   - component: {fileID: 590282926}
   - component: {fileID: 590282928}
+  - component: {fileID: 590282929}
   m_Layer: 0
   m_Name: primera nave copy
   m_TagString: Untagged
@@ -153,10 +154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9988c8c354361439dbd6f7d8c7515700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  inputH: 0
-  inputV: 0
-  speed: 500
 --- !u!212 &590282924
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -214,7 +211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590282922}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: -15.34, y: 0.31, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 0.41613, y: 0.38994002, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -280,6 +277,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 500
+--- !u!114 &590282929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590282922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267d52ea851ca4183a6843928ac62ad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &942114628
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +394,6 @@ GameObject:
   - component: {fileID: 988670169}
   - component: {fileID: 988670168}
   - component: {fileID: 988670167}
-  - component: {fileID: 988670170}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -458,21 +466,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &988670170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988670166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9734e1acf0d7c4e32b700a5e6a46d3cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 590282925}
-  smoothSpeed: 0.125
-  offset: {x: 0, y: 0, z: -10}
 --- !u!1 &1569726046
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +555,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569726046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.29, y: -0.91, z: 0}
+  m_LocalPosition: {x: 20.3, y: -0.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
