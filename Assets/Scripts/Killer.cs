@@ -19,9 +19,9 @@ public class Killer : MonoBehaviour
     }
 
     // Update is called once per frame
-       void Update()
+     void Update()
     {
-        if (transform.position[1] < -20)
+        if (transform.position[1] < -35)
         {
             transform.position = orginalPos;
             rb.velocity = new Vector2(0,0);
