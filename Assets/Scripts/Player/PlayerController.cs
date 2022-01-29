@@ -14,7 +14,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        HP = 400;
     }
 
     void Update()
@@ -30,10 +29,15 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(velocityX, velocityY);
     }
 
-    void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Algo paso\n");
         if(other.gameObject.tag == "Enemy_Kamikaze")
+        {
+           Destroy(other.gameObject);
+           HP -= 80;
+           Debug.Log(HP);
+        }
+        else if(other.gameObject.tag == "Enemy_Bomber")
         {
            Destroy(other.gameObject);
            HP -= 40;

@@ -8,7 +8,6 @@ public class Shoot : MonoBehaviour
     public int munition;
     int max_munition;
     GameObject bullet;
-    List<GameObject> bullets = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
@@ -21,10 +20,7 @@ public class Shoot : MonoBehaviour
     {
         if (Input.GetKeyDown("return"))
         {
-            bullet = Instantiate(Bullet, transform.position + new Vector3(0, 1, 0), Quaternion.identity);
-            
-            bullets.Add(bullet);
-            Debug.Log(bullets);  
+            Instantiate(Bullet, transform.position + new Vector3(0, 1, 0), Quaternion.identity);
         }
     }
 }
