@@ -15,7 +15,7 @@ public class BulletBehavior : MonoBehaviour
         objectwidth = transform.GetComponent<SpriteRenderer>().bounds.size.x;
         objectheight = transform.GetComponent<SpriteRenderer>().bounds.size.y;
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(0, 2);
+        rb.velocity = new Vector2(0, 8);
     }
 
     // Update is called once per frame
@@ -31,8 +31,9 @@ public class BulletBehavior : MonoBehaviour
     }
 
  
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(gameObject);
+        Destroy(this.gameObject);
+        Destroy(other.gameObject);
     }
 }

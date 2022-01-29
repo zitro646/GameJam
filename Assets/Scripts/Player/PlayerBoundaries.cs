@@ -30,13 +30,13 @@ public class PlayerBoundaries : MonoBehaviour
         {
             viewPos.x = (screenBounds.x * -1) - (objectwidth);
         }
-        if((viewPos.y + objectheight) > screenBounds.y)
+        if((viewPos.y + objectheight + 4) > screenBounds.y)
         {
-            viewPos.y = screenBounds.y - objectheight;
+            viewPos.y = screenBounds.y - objectheight - 4;
         }   
-        if((viewPos.y - objectheight) < (screenBounds.y * -1))
+        if((viewPos.y - objectheight - 2) < (screenBounds.y * -1))
         {
-            viewPos.y = (screenBounds.y * -1) + objectheight;
+            viewPos.y = (screenBounds.y * -1) + objectheight + 2;
         }
         //Debug.Log("x = "+viewPos.x+" y = "+viewPos.y+ "\n");
         transform.position = viewPos;
