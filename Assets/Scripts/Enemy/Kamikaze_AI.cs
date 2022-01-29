@@ -38,7 +38,13 @@ public class Kamikaze_AI : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag == "Player")
+        Debug.Log("Here");
+        Debug.Log(other.gameObject.tag);
+        if (other.gameObject.tag.Contains("Bullet"))
+        {
+            Debug.Log("Destroy");
+        }
+        else if(other.gameObject.tag == "Player")
         {
             Debug.Log("Boom (Se destruye)\n");
             

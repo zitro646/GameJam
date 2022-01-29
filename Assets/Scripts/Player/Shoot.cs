@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     public GameObject Bullet;
+    GameObject bullet;
     List<GameObject> bullets = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,9 @@ public class Shoot : MonoBehaviour
     {
         if (Input.GetKeyDown("return"))
         {
-            bullets.Add(Instantiate(Bullet, transform.position + new Vector3(0, 10, 0), Quaternion.identity));
+            bullet = Instantiate(Bullet, transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+            
+            bullets.Add(bullet);
             Debug.Log(bullets);  
         }
     }
