@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         if(other.gameObject.tag == "Enemy_Kamikaze")
         {
+           Debug.Log("Entra en contacto con el kamikaze");
            Destroy(other.gameObject);
            HP -= 80;
            Debug.Log(HP);

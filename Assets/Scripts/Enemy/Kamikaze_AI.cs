@@ -12,7 +12,7 @@ public class Kamikaze_AI : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        player = GameObject.Find("Player_ship");
+        player = GameObject.Find("Ship");
     }
 
     // Update is called once per frame
@@ -36,21 +36,18 @@ public class Kamikaze_AI : MonoBehaviour
         rb.velocity = new Vector2(velocityX, velocityY);
     }
 
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        Debug.Log("Here");
-        
-    }
-
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag.Contains("Player_Bullet"))
+        Debug.Log("Triggered  -> " + other.tag);
+        if (other.gameObject.tag == "Player_Bullet")
         {
+            Debug.Log("Es golpeado por una bala");
             Destroy(other.gameObject);
             Destroy(this.gameObject);
         }
         else if(other.gameObject.tag == "Player")
         {
+            Debug.Log("Toca al jugador");
             Destroy(this.gameObject);
         }
     }
