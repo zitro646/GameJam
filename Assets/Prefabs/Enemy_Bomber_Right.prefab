@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 741777536780400288}
   - component: {fileID: 4903658515788109645}
   - component: {fileID: 3265387776310018589}
+  - component: {fileID: -3100456744535569056}
   m_Layer: 0
   m_Name: Enemy_Bomber_Right
   m_TagString: Enemy_Bomber
@@ -117,7 +118,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09015083, y: 0.25842816}
+  m_Offset: {x: -0.0021629333, y: 0.05194202}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -128,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.131909, y: 4.511199}
+  m_Size: {x: 0.4264145, y: 0.4653712}
   m_EdgeRadius: 0
 --- !u!114 &3265387776310018589
 MonoBehaviour:
@@ -144,3 +145,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 613752500027628977, guid: 2c8c02b3264c84441a2843740e2f8097, type: 3}
   hp: 0
+--- !u!114 &-3100456744535569056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3969186829563173344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa047ff8c2c0944acb339060ef0b2767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTime: 0.5
+  Bullet: {fileID: 6958244942533253482, guid: bf1bb73e94e4c4961b46e0e594038f43, type: 3}

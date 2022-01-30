@@ -24,16 +24,9 @@ public class EnemyBulletBehavior : MonoBehaviour
         
         Vector3 viewPos = transform.position;
 
-        if((viewPos.y) > screenBounds.y)
+        if((viewPos.y) < (screenBounds.y * -1))
         {
             Destroy(gameObject);
         }
-    }
-
- 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Destroy(this.gameObject);
-        Destroy(other.gameObject);
     }
 }

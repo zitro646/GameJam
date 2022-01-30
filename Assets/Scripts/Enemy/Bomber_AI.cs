@@ -25,6 +25,30 @@ public class Bomber_AI : MonoBehaviour
     void LateUpdate()
     {
         setObjective();
+        if (checkObjective() == 1)
+            Destroy(this.gameObject);
+    }
+
+    int checkObjective()
+    {
+        float x = 0;
+        float y = 0;
+
+        if (rb.transform.position.x - objectwidth > target.transform.position.x)
+            x = 1;
+        else if (rb.transform.position.x + objectwidth < target.transform.position.x)
+            x = 1;
+
+        if (rb.transform.position.y - objectheight > target.transform.position.y)
+            y = 1;
+        else if (rb.transform.position.y + objectheight < target.transform.position.y)
+            y = 1; 
+        if ( y == 0 && x == 0)
+        {
+            return (1);
+        }
+            
+        return (-1);
     }
 
     void setObjective()

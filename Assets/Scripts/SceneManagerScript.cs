@@ -6,7 +6,12 @@ public class SceneManagerScript : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Nivel_1");
+    }
+
+    public void GoBackToMenu()
+    {
+        SceneManager.LoadScene("Main_Menu");
     }
 
     public  void end_game()
