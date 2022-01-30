@@ -1194,6 +1194,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 964323919}
     m_Modifications:
+    - target: {fileID: 7387968503757225313, guid: 37830d6912d024474a9b1964d2bbaa99,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0.421
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387968503757225314, guid: 37830d6912d024474a9b1964d2bbaa99,
+        type: 3}
+      propertyPath: m_TagString
+      value: MunitionSlider
+      objectReference: {fileID: 0}
     - target: {fileID: 7387968504066666192, guid: 37830d6912d024474a9b1964d2bbaa99,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1203,6 +1213,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387968504066666192, guid: 37830d6912d024474a9b1964d2bbaa99,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 93
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387968504066666192, guid: 37830d6912d024474a9b1964d2bbaa99,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387968504066666193, guid: 37830d6912d024474a9b1964d2bbaa99,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387968504066666195, guid: 37830d6912d024474a9b1964d2bbaa99,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7387968504268276101, guid: 37830d6912d024474a9b1964d2bbaa99,
         type: 3}
@@ -1323,6 +1353,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387968504536131671, guid: 37830d6912d024474a9b1964d2bbaa99,
+        type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387968504536131671, guid: 37830d6912d024474a9b1964d2bbaa99,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387968504536131673, guid: 37830d6912d024474a9b1964d2bbaa99,
+        type: 3}
+      propertyPath: m_TagString
+      value: LifeSlider
       objectReference: {fileID: 0}
     - target: {fileID: 7387968505631029916, guid: 37830d6912d024474a9b1964d2bbaa99,
         type: 3}

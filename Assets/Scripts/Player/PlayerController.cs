@@ -18,10 +18,11 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         HP = DataGame.HP;
+        MAX_HP = DataGame.MAX_HP;
         munition = DataGame.munition;
         rb = GetComponent<Rigidbody2D>();
         life = GameObject.FindGameObjectsWithTag("LifeSlider")[0].GetComponent<Slider>();
-        munitionSlider = GameObject.FindGameObjectsWithTag("MunitionSlider")[0]; //GameObject.FindGameObjectsWithTag("LifeSlider")[0].GetComponent<Image>();
+        munitionSlider = GameObject.FindGameObjectsWithTag("MunitionSlider")[0]; //;
         life.value =  HP; 
         Debug.Log("I am alive");
         Debug.Log(HP);
@@ -41,6 +42,7 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(velocityX, velocityY);
         DataGame.HP = HP;
         DataGame.munition = munition;
+        life.value = HP;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -50,21 +52,28 @@ public class PlayerController : MonoBehaviour
         {
            Debug.Log("Entra en contacto con el kamikaze");
            Destroy(other.gameObject);
-           HP -= 80;
-           life.value =  HP; 
-           Debug.Log(HP);
+           HP -= 40;
         }
         else if(other.gameObject.tag == "Enemy_Bomber")
         {
            Destroy(other.gameObject);
-           HP -= 40;
-           life.value =  HP; 
-           Debug.Log(HP);
+           HP -= 20;
+        }
+        else if(other.gameObject.tag == "Enemy_Bomber")
+        {
+           Destroy(other.gameObject);
+           HP -= 20;
+        }
+        else if(other.gameObject.tag == "Enemy_Bullet")
+        {
+           Destroy(other.gameObject);
+           HP -= 10;
         }
         if (other.gameObject.tag == "Steal")
         {
-            HP += 40;
-            life.value =  HP;
+            HP += 20;
+            if (HP > MAX_HP)
+                HP = MAX_HP;
             Debug.Log("SADFASDFD");
             Debug.Log(HP);
         }
