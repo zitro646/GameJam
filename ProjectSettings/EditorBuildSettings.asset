@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Nivel_1.unity
+    path: Assets/Scenes/Scene_Vertical.unity
     guid: fc4b8678053264958ae7d0ef2a0285a8
   - enabled: 1
     path: Assets/Scenes/Main_Menu.unity
@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nivel_2.unity
     guid: 8c2c95edb076146cda9e85ebb5ca9f20
+  - enabled: 1
+    path: Assets/Scenes/Nivel_1.unity
+    guid: 86ba73c8edbc744b08952f035b68fc2d
+  - enabled: 1
+    path: Assets/Scenes/Nivel_3.unity
+    guid: 18da05e20f46745208b534d8a65560f6
+  - enabled: 1
+    path: Assets/Scenes/You Win.unity
+    guid: 8a00a376ebf9a41c1bcb485805dce80b
   m_configObjects: {}

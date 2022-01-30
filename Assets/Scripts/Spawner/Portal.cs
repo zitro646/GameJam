@@ -26,7 +26,11 @@ public class Portal : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             if (nivel == 1)
+                SceneManager.LoadScene("Nivel_3");
+            else if (nivel == 3)
                 SceneManager.LoadScene("Nivel_2");
+            else if (nivel == 2)
+                SceneManager.LoadScene("You Win");
         }
     }
 }
