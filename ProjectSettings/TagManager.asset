@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Enemy_Kamikaze
   - Bullet
+  - Player_Bullet
+  - Enemy_Bullet
+  - Enemy_Lurker
+  - Enemy_Bomber
+  - Portal
   layers:
   - Default
   - TransparentFX

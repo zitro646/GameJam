@@ -6,8 +6,8 @@ public class Round_Manager : MonoBehaviour
 {
     
     public float targetTime;
-    public int nivel;
     private float time;
+    public GameObject Portal;
 
     void Start()
     {
@@ -19,20 +19,10 @@ public class Round_Manager : MonoBehaviour
     {
         time -= Time.deltaTime;
         if (time <= 0.0f)
-        {   
-            switch (nivel)
-            {
-                case 1:
-
-                break;
-                case 2:
-
-                break;
-                case 3:
-
-                break;
-                default:
-            }
+        {
+            Debug.Log("Se crea el portal");
+            time = targetTime;
+            Instantiate(Portal, transform.position + new Vector3(0, 1, 0), Quaternion.identity);
         }
     }
 }

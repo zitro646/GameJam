@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public int HP;
     public int munition;
+    public int nivel;
 
     void Start()
     {
@@ -54,6 +55,17 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Absorbe bala");
            Destroy(other.gameObject);
            HP -= 20;
+        }
+        else if (other.gameObject.tag == "Portal")
+        {
+            switch (nivel)
+            {
+                case 1:
+                    SceneManager.LoadScene("Nivel_2");
+                break;
+                default:
+                break;
+            }
         }
     }
 
