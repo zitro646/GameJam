@@ -22,7 +22,6 @@ public class Portal : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("EL trigger del portal se activa : "+other.gameObject.tag);
         if(other.gameObject.tag == "Player")
         {
             if (nivel == 1)

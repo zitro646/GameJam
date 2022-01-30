@@ -26,6 +26,5 @@ public class Enemy_shots : MonoBehaviour
     void timerEnded()
     {
         Instantiate(Bullet, transform.position + new Vector3(0, -1, 0), Quaternion.identity);
-        //do your stuff here.
     }
 }

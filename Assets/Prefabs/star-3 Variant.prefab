@@ -1,30 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &4662787631328381476
-MonoBehaviour:
+--- !u!54 &6879700801591907840
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8315214842868732608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 044260a7b6ca34936bf7c8f54904ad24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3515989022348118274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8315214842868732608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a034c238c5840afa603730da211116, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  encodePanel: {fileID: 0}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2882424944394631631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92,7 +83,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8235121489805079576, guid: 88d6e7e828ffb4ad6840489d84766f57, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 88d6e7e828ffb4ad6840489d84766f57, type: 3}
 --- !u!1 &8315214842868732608 stripped
 GameObject:

@@ -35,7 +35,6 @@ public class Lurker_AI : MonoBehaviour
         }
         else
         {
-            Debug.Log("Esta en el objetivo");
             setObjective();
         }
             

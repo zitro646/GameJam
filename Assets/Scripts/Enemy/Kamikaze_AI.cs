@@ -43,7 +43,6 @@ public class Kamikaze_AI : MonoBehaviour
         if (other.gameObject.tag == "Player_Bullet")
         {
             hp -= 80;
-            Debug.Log("Vida despues del golpe : "+ hp);
             if (hp <= 0)
                 Destroy(this.gameObject);
             Destroy(other.gameObject);
