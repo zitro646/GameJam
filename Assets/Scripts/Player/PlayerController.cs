@@ -17,10 +17,15 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        HP = DataGame.HP;
+        munition = DataGame.munition;
         rb = GetComponent<Rigidbody2D>();
         life = GameObject.FindGameObjectsWithTag("LifeSlider")[0].GetComponent<Slider>();
         munitionSlider = GameObject.FindGameObjectsWithTag("MunitionSlider")[0]; //GameObject.FindGameObjectsWithTag("LifeSlider")[0].GetComponent<Image>();
         life.value =  HP; 
+        Debug.Log("I am alive");
+        Debug.Log(HP);
+        Debug.Log(munition);
     }
 
     void Update()
@@ -34,7 +39,8 @@ public class PlayerController : MonoBehaviour
         float velocityX = inputH * speed * Time.fixedDeltaTime;
         float velocityY = inputY * speed * Time.fixedDeltaTime;
         rb.velocity = new Vector2(velocityX, velocityY);
-
+        DataGame.HP = HP;
+        DataGame.munition = munition;
     }
 
     void OnTriggerEnter2D(Collider2D other)
