@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7107617248279640766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.1880476, y: -3, z: -6.0434}
-  m_LocalScale: {x: 0.89858, y: 0.88734776, z: 0.89858}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7107617248538986136}
   - {fileID: 7107617249071747434}
@@ -84,8 +84,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 250
-  HP: 100
-  munition: 20
 --- !u!212 &7107617248279640761
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -184,7 +182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 899669204747804863, guid: 882ed0c7e913c4ea39b8511b734146d4, type: 3}
-  munition: 10
 --- !u!1 &7107617248538986137
 GameObject:
   m_ObjectHideFlags: 0

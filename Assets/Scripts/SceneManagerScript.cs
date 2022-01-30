@@ -9,6 +9,11 @@ public class SceneManagerScript : MonoBehaviour
         SceneManager.LoadScene("Nivel_1");
     }
 
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void GoBackToMenu()
     {
         SceneManager.LoadScene("Main_Menu");

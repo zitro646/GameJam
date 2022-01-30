@@ -11,7 +11,7 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("return"))
+        if (Input.GetMouseButtonDown(0))
         {
             if (DataGame.munition > 0)
             {
