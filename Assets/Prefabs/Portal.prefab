@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6274562533460564680}
   - component: {fileID: 6274562533460564681}
   - component: {fileID: 6274562533460564678}
+  - component: {fileID: -5013110569978795185}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Portal
@@ -122,7 +123,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.93, y: 0.62}
+    oldSize: {x: 9.3, y: 6.2}
     newSize: {x: 7.28, y: 4.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -144,3 +145,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 1
+--- !u!95 &-5013110569978795185
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6274562533460564679}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c15ff2e919158f74cad470a587c091de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
