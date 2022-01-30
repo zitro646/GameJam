@@ -7,9 +7,9 @@ public class RadialFill : MonoBehaviour
 {
     public GameObject Filler;
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-        Fill(0.8f);
+        Fill(DataGame.munition/DataGame.MAX_MUNITION);
     }
     void Fill(float fill_amount)
     {
