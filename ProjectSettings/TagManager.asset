@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Enemy_Kamikaze
   - Bullet
+  - Player_Bullet
+  - Enemy_Bomber
+  - Steal
+  - Munition
+  - LifeSlider
+  - MunitionSlider
   layers:
   - Default
   - TransparentFX
